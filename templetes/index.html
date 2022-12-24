@@ -1,0 +1,301 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link rel="stylesheet" href="{% static 'css/icon-font.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="shortcut icon" type="image/png" href="{% static 'img/logo.png' %}">
+        
+        <title>Spam Detection | Test your sms</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__logo-box">
+                <i class="header__logo icon-basic-message-txt"></i>
+            </div>
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Spam detection</span>
+                    <span class="heading-primary--sub">Don't let spam messages mislead you</span>
+                </h1>
+
+                <a href="{% url 'detect' %}" class="btn btn--white btn--animated u-margin-bottom-small">Test message</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="section-about">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        Your 'SMS' might be a spam
+                    </h2>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-1-of-2">
+                        <h3 class="heading-tertiary u-margin-bottom-small">What are spam messages?</h3>
+                        <p class="paragraph">
+                                The term ‘SMS’ is used for user activity and all types of text messages around the world. Over time, it has become a
+                                medium of advertising and promoting products, banking updates, Agricultural information, Flight updates and Internet
+                                offers. SMS is used in direct marketing or SMS marketing as well. But SMS marketing can be a matter of disturbance to
+                                users, these are called Spam SMS
+                        </p>
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">Why you need a dectector?</h3>
+                        <p class="paragraph">
+                            In recent years, we witnessed a drastic increase in the number of spam messages. These spam’s are one of the biggest
+                            concerns for many as people do not like to receive them and find it annoying. They are unsolicited messages to users,
+                            which are disturbing and sometimes harmful.
+                        </p>
+
+                        <a href="https://www.cyberswachhtakendra.gov.in/documents/Mobile_phone_Security.pdf" class="btn-text">Learn more &rarr;</a>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="compositon">
+                            <img src="{% static 'img/img-3.jpg' %}" alt="Photo 1" class="compositon__photo compositon__photo--p1">
+                            <img src="{% static 'img/img-1.jpg' %}" alt="Photo 3" class="compositon__photo compositon__photo--p3">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-features">
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <div class="feature-box">
+                            <i class="feature-box__icon icon-basic-world"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Stay Safe from bad web</h3>
+                            <p class="feature-box__text">
+                                Even though there's a lot of security available, there are some specialized people and they can get access to your system.
+                            </p>    
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="feature-box">
+                            <i class="feature-box__icon icon-basic-compass"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Save your time</h3>
+                            <p class="feature-box__text">
+                                Prevention is better than cure & time is money. Follow best practices and get rid of unwanted sms.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="feature-box">
+                            <i class="feature-box__icon icon-basic-map"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Know relevant messages</h3>
+                            <p class="feature-box__text">
+                                Time is money! Everyone, every advertisment just wants your attention, it's better to know just the relevant things. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            
+            <section class="section-stories" style="margin-top: -7rem;">
+                <div class="bg-video">
+                    <video class="bg-video__content" autoplay muted loop>
+                        <source src="{% static 'img/video.mp4' %}" type="video/mp4">
+                        Your browser is not supported!    
+                    </video>
+                </div>
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        How to stay safe from Cyber Crime?
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="story">
+                        <figure class="story__shape">
+                            <img class="story__img" src="{% static 'img/evan.jpg' %}" alt="Person on a tour">
+                            <figcaption class="story__caption">EVAN PORTER</figcaption>
+                        </figure>
+                        <div class="story__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">
+                                Tips to Protect Yourself from Cyber Criminals
+                            </h3>
+                            <p>
+                                Unfortunately, you can never guarantee you’ll won’t be victimized by a cybercriminal. Some steps you can take - Always Use An Antivirus, Avoid Untrustworthy Websites, Beware Of Phishing Attempts, Update All Software And Operating Systems Regularly, Don’t Overshare On Social Media.
+                            </p>
+                            <div class="u-center-text u-margin-top-small">
+                                <a href="https://www.safetydetectives.com/blog/what-is-a-cybercrime/" class="btn-text">Read more &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                    <div class="row">
+                        <div class="story">
+                            <figure class="story__shape">
+                                <img class="story__img" src="{% static 'img/patrick.jpg' %}" alt="Person on a tour">
+                                <figcaption class="story__caption">Patrick Falzon</figcaption>
+                            </figure>
+                            <div class="story__text">
+                                <h3 class="heading-tertiary u-margin-bottom-small">
+                                    How Your Phone Number is Exposed: Tips to Protect Your Online Identity
+                                </h3>
+                                <p>
+                                    Spammers will also take advantage of situations where you might be more vulnerable to fall for their scams. At the
+                                    height of the COVID- 19 pandemic in the US, spam call angles shifted from everyday insurance claims to messages related
+                                    to contact tracing, testing kits, and even call to actions to donate PPE to front line workers.
+                                    
+                                    And it’s not just phone calls – text messages present a newer threat in cybersecurity. The messages often contain links
+                                    that could lead to a virus, install malware on your phone, or connect you to a scam that may ask for personal
+                                    information.
+                                </p>
+                                <div class="u-center-text u-margin-top-small">
+                                    <a href="https://staysafeonline.org/blog/how-your-phone-number-is-exposed/" class="btn-text">Read more &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </section>
+
+            <section class="section-tours">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        Our developers
+                    </h2>
+                </div>
+            
+                <div class="row">
+            
+            
+                    <div class="col-1-of-4">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--1">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--1">
+                                        Sahil Darji
+                                    </span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>
+                                            <a class="no-decoration" href="https://github.com/sahil-1602">GitHub <i
+                                                    class="fab fa-github"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="no-decoration"
+                                                href="https://www.linkedin.com/in/sahil-darji-11ab3a1ab/">LinkedIn <i
+                                                    class="fab fa-linkedin"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="no-decoration">Email <i class="fas fa-envelope"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                    <div class="col-1-of-4">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--2">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--2">
+                                        Divya <br> Jain
+                                    </span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>
+                                            <a class="no-decoration" href="https://github.com/divyajainn">GitHub <i
+                                                    class="fab fa-github"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="no-decoration"
+                                                href="https://www.linkedin.com/in/divya-jain-00422b1a9/">LinkedIn <i
+                                                    class="fab fa-linkedin"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="no-decoration">Email <i class="fas fa-envelope"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                    <div class="col-1-of-4">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--3">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--3">
+                                        Jainish Sakhidas
+                                    </span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>
+                                            <a class="no-decoration" href="https://github.com/Jainishsakhidas">GitHub <i
+                                                    class="fab fa-github"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="no-decoration"
+                                                href="https://www.linkedin.com/in/jainish-sakhidas-275b4b192/">LinkedIn <i
+                                                    class="fab fa-linkedin"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="no-decoration">Email <i class="fas fa-envelope"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="col-1-of-4">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--4">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--4">
+                                        Linesh Patil
+                                    </span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>
+                                            <a class="no-decoration" href="https://github.com/sahil-1602/sms-spam-detection">GitHub
+                                                <i class="fab fa-github"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="no-decoration">LinkedIn <i class="fab fa-linkedin"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="no-decoration">Email <i class="fas fa-envelope"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+    </body>
+</html>

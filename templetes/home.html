@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpamDetection</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>SMS Spam Predictor</h1>
+    <form action="{% url 'predict' %}">
+        <textarea name="fulltext" id="" cols="50" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
